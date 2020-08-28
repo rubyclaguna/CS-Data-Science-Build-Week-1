@@ -2,16 +2,12 @@
 
 import numpy as np 
 import scipy as sp 
-from scipy import stats 
-
-
 
 class knn: 
     
     def __init__(self, n_neighbors=5):
 
         self.n_neighbors = n_neighbors 
-
     
     def knn_fit(self, X_train, y_train):
         """
@@ -72,9 +68,8 @@ class knn:
         """ 
         Displays list of 5 neighbors and their euclidean distance. 
         """ 
-
         distances = [] 
-
+        
         # For every row in X_train, finds the euclidean distance to X 
         # and appends values to distances list. 
         for i in self.X_train:
